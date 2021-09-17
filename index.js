@@ -7,6 +7,6 @@ app.get('/', (req, res) => {
     console.log("A GET rekhq!")
      var a = Math.random();
     console.log(a)
-    res.send(`${a} what`)
+    res.send(a)
 })
-app.listen(process.env.PORT || 3000)
+app.listen(process.env.PORT)
