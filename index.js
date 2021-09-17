@@ -4,7 +4,7 @@ const app = express()
 app.get('/', (req, res) => {
   console.log(req.userAgent)
   
-    console.log("A GET reqest!")
+    console.log("A GET req!")
     res.json({Hello:'😀hhh'})
 })
 app.listen(process.env.PORT || 3000)
