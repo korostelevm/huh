@@ -5,6 +5,6 @@ app.get('/', (req, res) => {
   console.log(req.userAgent)
   
     console.log("A GET rekhq!")
-    res.json({Hello:'😀hhh'})
+    res.send('what')
 })
 app.listen(process.env.PORT || 3000)
