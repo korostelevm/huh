@@ -3,7 +3,6 @@ const express = require('express')
 const app = express()
 app.get('/', (req, res) => {
      var a = Math.random();
-    console.log(a) 
          console.log(a) 
 
     res.send(a.toString())
