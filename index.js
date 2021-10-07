@@ -3,8 +3,8 @@ const express = require('express')
 const app = express()
 app.get('/', (req, res) => {
      var a = Math.random();
-         console.log(a)
-     console.error('asdf')
+     console.log('request recieved')
+         console.log(req.headers)
 
     res.send(a.toString())
 })
