@@ -3,8 +3,9 @@ const express = require('express')
 const app = express()
 app.get('/', (req, res) => {
      var a = Math.random();
-     console.log('request recieved')
-         console.log(req.headers)
+     console.log('recieved [GET] / ')
+     
+         console.log(req.headers['user-agent'])
 
     res.send(a.toString())
 })
