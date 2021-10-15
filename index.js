@@ -7,6 +7,6 @@ app.get('/', (req, res) => {
          
          console.log(req.headers['user-agent'])
 
-    res.send(a.toString())
+    res.send('hello')
 })
 app.listen(process.env.PORT)
