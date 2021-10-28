@@ -7,7 +7,9 @@ app.get('/', (req, res) => {
          console.log(Object.keys(req))
          console.log(req.headers['user-agent']    )
               console.log(process.env   )
-     let response = Math.random().toString()
-    res.send(response)
+     let response = {
+          user_agent:req.headers['user-agent']
+     }
+    res.json(response)
 })
 app.listen(process.env.PORT)
