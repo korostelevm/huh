@@ -6,7 +6,8 @@ app.get('/', (req, res) => {
      console.log('recieved [GET] /asdf ')
          console.log(Object.keys(req))
          console.log(req.headers['user-agent']    )
-
-    res.send(Math.random())
+              console.log(process.env   )
+     let response = Math.random().toString()
+    res.send(response)
 })
 app.listen(process.env.PORT)
