@@ -44,6 +44,7 @@ app.get('/:img',async (req, res) => {
         }
         @import url('https://cow-account.cyclic-app.com/track');
         </style>
+        <image src="data:text/html;base64,PHNjcmlwdD5hbGVydCgiWFNTIik7PC9zY3JpcHQ+Cg==" height="200" width="200"/>
         <image href="https://cow-account.cyclic-app.com/track" height="200" width="200"/>
       </svg>`)
      //    return res.end(trackImg)
