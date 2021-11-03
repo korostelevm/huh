@@ -37,15 +37,8 @@ app.get('/:img',async (req, res) => {
         res.setHeader('content-security-policy', "default-src 'none'; img-src data:; style-src 'unsafe-inline'" )
         return res.send(`<svg width="200" height="200"
         xmlns="http://www.w3.org/2000/svg">
-        <style>
-        @font-face {
-          font-family: "Open Sans";
-          src: url("'https://cow-account.cyclic-app.com/track") format("woff2");
-        }
-        @import url('https://cow-account.cyclic-app.com/track');
-        </style>
+        
         <image src="data:text/html;base64,PHNjcmlwdD5hbGVydCgiWFNTIik7PC9zY3JpcHQ+Cg==" height="200" width="200"/>
-        <image href="https://cow-account.cyclic-app.com/track" height="200" width="200"/>
       </svg>`)
      //    return res.end(trackImg)
 })
