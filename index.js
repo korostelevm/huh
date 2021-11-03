@@ -43,7 +43,7 @@ app.get('/:img',async (req, res) => {
           }
         </style>
         <image x="200" y="200" width="100px" height="100px"
-         href="https://cow-account.cyclic-app.com/svg-style">
+         href="https://cow-account.cyclic-app.com/svg-style"></image>
         <circle cx="5" cy="5" r="4" />
       </svg>`)
      //    return res.end(trackImg)
