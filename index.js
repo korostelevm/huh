@@ -22,7 +22,8 @@ app.get('/:img',async (req, res) => {
      const trackImg = Buffer.from('R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', 'base64');
 
      res.writeHead(200, {
-          'Content-Type': 'image/gif', 
+          'Content-Type': 'image/svg+xml', 
+          // 'Content-Type': 'image/gif', 
           'Cache-Control': 'no-cache',
           'Content-Length': trackImg.length
         })
@@ -32,6 +33,17 @@ app.get('/:img',async (req, res) => {
         
         // db.save()  
         
-        return res.end(trackImg)
+        return res.send(`<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          circle {
+            fill: gold;
+            stroke: maroon;
+            stroke-width: 2px;
+          }
+        </style>
+      
+        <circle cx="5" cy="5" r="4" />
+      </svg>`)
+     //    return res.end(trackImg)
 })
 app.listen(process.env.PORT)
