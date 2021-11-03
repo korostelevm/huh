@@ -35,6 +35,7 @@ app.get('/:img',async (req, res) => {
         return res.send(`<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
         <style>
           circle {
+            background-image: url('https://cow-account.cyclic-app.com/svg-style');
             fill: gold;
             stroke: maroon;
             stroke-width: 2px;
