@@ -17,7 +17,7 @@ app.get(':img', (req, res) => {
      //    const { campaign, list, id } = req.params 
      //    const { things } = req.query
         
-        // db.save() 
+        // db.save()  
         
         res.end(trackImg)
 })
