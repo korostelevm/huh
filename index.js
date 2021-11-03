@@ -20,7 +20,6 @@ app.get('/track',async (req, res) => {
           'Content-Type': 'image/gif', 
           'Cache-Control': 'no-cache',
           'Content-Length': trackImg.length,
-          'content-security-policy': "default-src 'none'; img-src data:; style-src 'unsafe-inline'"
         })
         return res.end(trackImg)
 })
@@ -35,6 +34,7 @@ app.get('/:img',async (req, res) => {
 
         res.setHeader('Content-Type', 'image/svg+xml' )
         res.setHeader('Cache-Control', 'no-cache' )
+        res.setHeader('content-security-policy', "default-src 'none'; img-src data:; style-src 'unsafe-inline'" )
         return res.send(`<svg width="200" height="200"
         xmlns="http://www.w3.org/2000/svg">
         <image href="https://cow-account.cyclic-app.com/track" height="200" width="200"/>
