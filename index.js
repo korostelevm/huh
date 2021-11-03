@@ -1,7 +1,7 @@
 // index.js  
 const express = require('express')
 const app = express()
-app.get(':img', (req, res) => {
+app.get('/:img', (req, res) => {
      console.log('recieved [GET] ')
          console.log(req.params.img)
          console.log(Object.keys(req))
