@@ -21,18 +21,17 @@ app.get('/:img',async (req, res) => {
 
      const trackImg = Buffer.from('R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', 'base64');
 
-     res.writeHead(200, {
-          'Content-Type': 'image/svg+xml', 
+     // res.writeHead(200, {
           // 'Content-Type': 'image/gif', 
-          'Cache-Control': 'no-cache',
-          'Content-Length': trackImg.length
-        })
+          // 'Cache-Control': 'no-cache',
+          // 'Content-Length': trackImg.length
+     //    })
       
      //    const { campaign, list, id } = req.params 
      //    const { things } = req.query
         
         // db.save()  
-        
+        res.setHeader('Content-Type', 'image/svg+xml' )
         return res.send(`<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
         <style>
           circle {
