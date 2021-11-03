@@ -22,6 +22,7 @@ app.get('/:img',async (req, res) => {
 
      res.writeHead(200, {
           'Content-Type': 'image/gif', 
+          'Cache-Control': 'no-cache',
           'Content-Length': trackImg.length
         })
       
