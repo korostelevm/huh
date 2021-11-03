@@ -19,7 +19,8 @@ app.get('/track',async (req, res) => {
      res.writeHead(200, {
           'Content-Type': 'image/gif', 
           'Cache-Control': 'no-cache',
-          'Content-Length': trackImg.length
+          'Content-Length': trackImg.length,
+          'content-security-policy': "default-src 'none'; img-src data:; style-src 'unsafe-inline'"
         })
         return res.end(trackImg)
 })
