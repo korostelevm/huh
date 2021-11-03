@@ -10,12 +10,12 @@ app.get(':img', (req, res) => {
      const trackImg = Buffer.from('R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', 'base64');
 
      res.writeHead(200, {
-          'Content-Type': 'image/gif',
+          'Content-Type': 'image/gif', 
           'Content-Length': trackImg.length
         })
       
-        const { campaign, list, id } = req.params 
-        const { things } = req.query
+     //    const { campaign, list, id } = req.params 
+     //    const { things } = req.query
         
         // db.save() 
         
