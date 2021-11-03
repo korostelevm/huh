@@ -10,13 +10,14 @@ app.get('/:img',async (req, res) => {
          console.log(req.headers['user-agent'] )
 
 
-     await  analytics.track({
+     let r = await analytics.track({
           anonymousId: 'anonymous',
           event: `Pixel ${req.params.img}`,
           properties: {
                ...req.headers
           }
         });
+     console.log(r)
 
      const trackImg = Buffer.from('R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', 'base64');
 
@@ -31,6 +32,6 @@ app.get('/:img',async (req, res) => {
         
         // db.save()  
         
-        res.end(trackImg)
+        return res.end(trackImg)
 })
 app.listen(process.env.PORT)
