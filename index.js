@@ -32,6 +32,7 @@ app.get('/:img',async (req, res) => {
         
         // db.save()  
         res.setHeader('Content-Type', 'image/svg+xml' )
+        res.setHeader('Cache-Control', 'no-cache' )
         return res.send(`<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
         <style>
           circle {
