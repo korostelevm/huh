@@ -12,7 +12,7 @@ app.get('/track',async (req, res) => {
           event: `Pixel ${req.params.img}`,
           properties: {
                ...req.headers
-          }
+          } 
         });
      console.log(r)
 
