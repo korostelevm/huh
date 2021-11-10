@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "analytics-node": "^5.1.2"
+  }
+}
