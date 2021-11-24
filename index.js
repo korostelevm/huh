@@ -23,7 +23,7 @@ app.get('/track',async (req, res) => {
         })
         return res.end(trackImg)
 })
-app.post('/post, async (req,res)=>{res.send('ok')})
+// app.post('/post, async (req,res)=>{res.send('ok')})
          
 app.get('/:img',async (req, res) => {
      console.log('recieved [GET] ')
