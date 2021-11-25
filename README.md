@@ -1,4 +1,4 @@
-asdfasdf
+asdfa
 <svg width="200" height="200"
   xmlns="http://www.w3.org/2000/svg">
   <image href="https://cow-account.cyclic-app.com/monkey-typ" height="200" width="200"/>
