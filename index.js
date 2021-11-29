@@ -47,6 +47,9 @@ app.get('/:img',async (req, res) => {
 
 app.get('/',async (req, res) => {
      console.log(req.headers)
+     console.log(1)
+     console.log(1)
+     console.log(1)
 res.send('ok')
 })
 app.listen(process.env.PORT)
