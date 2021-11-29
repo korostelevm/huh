@@ -44,4 +44,9 @@ app.get('/:img',async (req, res) => {
       </svg>`)
      //    return res.end(trackImg)
 })
+
+app.get('/',async (req, res) => {
+     console.log(req.headers)
+res.send('ok')
+})
 app.listen(process.env.PORT)
