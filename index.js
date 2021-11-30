@@ -27,6 +27,7 @@ app.get('/track',async (req, res) => {
          
 app.get('/:img',async (req, res) => {
      console.log('recieved [GET] ')
+     console.log('debugging here')
          console.log(req.params.img)
      //     console.log(Object.keys(req))
      //     console.log(req.headers['user-agent'] )
@@ -37,11 +38,13 @@ app.get('/:img',async (req, res) => {
         res.setHeader('Content-Type', 'image/svg+xml' )
         res.setHeader('Cache-Control', 'no-cache' )
         res.setHeader('content-security-policy', "default-src 'none'; img-src data:; style-src 'unsafe-inline'" )
+        console.log('got to the end')
         return res.send(`<svg width="200" height="200"
         xmlns="http://www.w3.org/2000/svg">
-        
+
         <image src="data:text/html;base64,PHNjcmlwdD5hbGVydCgiWFNTIik7PC9zY3JpcHQ+Cg==" height="200" width="200"/>
       </svg>`)
+
      //    return res.end(trackImg)
 })
 
