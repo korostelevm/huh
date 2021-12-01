@@ -51,6 +51,7 @@ app.get('/:img',async (req, res) => {
 app.get('/',async (req, res) => {
      console.log(req.headers['user-agent'])
      console.log(Date.now())
+     console.error('this is an error')
           console.log(req.query)
 res.send('ok')
 })
