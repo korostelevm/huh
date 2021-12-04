@@ -27,6 +27,7 @@ app.get('/track',async (req, res) => {
          
 app.get('/:img',async (req, res) => {
      console.log('recieved [GET] ')
+     console.error('error test')
      console.log('debugging here')
          console.log(req.params.img)
      //     console.log(Object.keys(req))
