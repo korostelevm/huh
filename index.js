@@ -60,3 +60,11 @@ app.get('/',async (req, res) => {
 res.send('ok')
 })
 app.listen(3333)
+
+
+var http = require('http');
+http.createServer(function (req, res) {
+    console.log(`Just got a request at ${req.url}!`)
+    res.write('Yo!');
+    return res.end();
+}).listen(3000);
