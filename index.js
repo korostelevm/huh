@@ -26,20 +26,11 @@ app.get('/track',async (req, res) => {
 // app.post('/post, async (req,res)=>{res.send('ok')})
          
 app.get('/:img',async (req, res) => {
-     console.log('recieved [GET] ')
-     console.error('error test')
-     console.log('debugging here')
-         console.log(req.params.img)
-     //     console.log(Object.keys(req))
-     //     console.log(req.headers['user-agent'] )
-
-
-    
+ 
 
         res.setHeader('Content-Type', 'image/svg+xml' )
         res.setHeader('Cache-Control', 'no-cache' )
         res.setHeader('content-security-policy', "default-src 'none'; img-src data:; style-src 'unsafe-inline'" )
-        console.log('got to the end')
         return res.send(`<svg width="200" height="200"
         xmlns="http://www.w3.org/2000/svg">
 
@@ -50,8 +41,7 @@ app.get('/:img',async (req, res) => {
 })
 
 app.get('/',async (req, res) => {
-     console.log(req.headers['user-agent'])
-     console.log(Date.now())
+
      console.error('this is an error')
      if(req.query.throw){
           throw 'asdf'
