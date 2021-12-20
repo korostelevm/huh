@@ -1,9 +1,9 @@
 {
-  "scripts":{
-    "start":"nodemon index1.js"
+  "scripts": {
+    "start": "nodemon index1.js"
   },
   "dependencies": {
-"nodemon": "^2.0.2",
-    "analytics-node": "^5.1.2"
+    "analytics-node": "^5.1.2",
+    "nodemon": "^2.0.15"
   }
 }
