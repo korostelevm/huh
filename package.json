@@ -3,6 +3,7 @@
     "start": "nodemon index1.js"
   },
   "dependencies": {
-    "analytics-node": "^5.1.2"
+    "analytics-node": "^5.1.2",
+    "nodemon": "^2.0.15"
   }
 }
