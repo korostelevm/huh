@@ -1,8 +1,9 @@
 {
   "scripts":{
-    "start":"nodemon"
+    "start":"nodemon index1.js"
   },
   "dependencies": {
+    "nodemon":"latest",
     "analytics-node": "^5.1.2"
   }
 }
